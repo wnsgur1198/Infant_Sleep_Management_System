@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txt_MainSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="우리아이 꿀잠 TIP!!"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_SubSubject1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_MainSubject" />
+
+    <TextView
+        android:id="@+id/txt_SubSubject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="속싸개, 종류와 선택법"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_MainSubject"
+        app:layout_constraintTop_toBottomOf="@+id/txt_MainSubject" />
+
+    <TextView
+        android:id="@+id/txt_Contents1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="속싸개는 신생아기에 남아있는 모로반..."
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_SubSubject1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SubSubject1" />
+
+    <ImageView
+        android:id="@+id/icon_Heart1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Contents1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Contents1"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/txt_Herat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Heart1"
+        app:layout_constraintStart_toEndOf="@+id/icon_Heart1"
+        app:layout_constraintTop_toTopOf="@+id/icon_Heart1" />
+
+    <ImageView
+        android:id="@+id/icon_Comment1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Herat1"
+        app:layout_constraintStart_toEndOf="@+id/txt_Herat1"
+        app:layout_constraintTop_toTopOf="@+id/txt_Herat1"
+        app:srcCompat="@drawable/text" />
+
+    <TextView
+        android:id="@+id/txt_Comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Comment1"
+        app:layout_constraintStart_toEndOf="@+id/icon_Comment1"
+        app:layout_constraintTop_toTopOf="@+id/icon_Comment1" />
+
+    <TextView
+        android:id="@+id/txt_Time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="14분전"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Comment1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_Comment1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Comment2" />
+
+    <TextView
+        android:id="@+id/txt_SubSubject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="신생아 위식도 역류 대처"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/icon_Heart1"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Heart1" />
+
+    <TextView
+        android:id="@+id/txt_Contents2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="이제 3개월이 된 재이는 이부자리에 좋..."
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_SubSubject2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SubSubject2" />
+
+    <ImageView
+        android:id="@+id/icon_Heart2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Contents2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Contents2"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/txt_Herat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Heart2"
+        app:layout_constraintStart_toEndOf="@+id/icon_Heart2"
+        app:layout_constraintTop_toTopOf="@+id/icon_Heart2" />
+
+    <ImageView
+        android:id="@+id/icon_Comment2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Herat2"
+        app:layout_constraintStart_toEndOf="@+id/txt_Herat2"
+        app:layout_constraintTop_toTopOf="@+id/txt_Herat2"
+        app:srcCompat="@drawable/text" />
+
+    <TextView
+        android:id="@+id/txt_Comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="12"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Comment2"
+        app:layout_constraintStart_toEndOf="@+id/icon_Comment2"
+        app:layout_constraintTop_toTopOf="@+id/icon_Comment2" />
+
+    <TextView
+        android:id="@+id/txt_Time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="8시간 전"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Comment2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_Comment2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Comment1" />
+
+    <TextView
+        android:id="@+id/txt_SubSubject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="돌 이후 아이 수면문제 개선"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/icon_Heart2"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Heart2" />
+
+    <TextView
+        android:id="@+id/txt_Contents3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1. 아기만의 동화책을 함께 만들어보세..."
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_SubSubject3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_SubSubject3" />
+
+    <ImageView
+        android:id="@+id/icon_Heart3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_Contents3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Contents3"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/txt_Herat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Heart3"
+        app:layout_constraintStart_toEndOf="@+id/icon_Heart3"
+        app:layout_constraintTop_toTopOf="@+id/icon_Heart3" />
+
+    <ImageView
+        android:id="@+id/icon_Comment3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Herat3"
+        app:layout_constraintStart_toEndOf="@+id/txt_Herat3"
+        app:layout_constraintTop_toTopOf="@+id/txt_Herat3"
+        app:srcCompat="@drawable/text" />
+
+    <TextView
+        android:id="@+id/txt_Comment3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/icon_Comment3"
+        app:layout_constraintStart_toEndOf="@+id/icon_Comment3"
+        app:layout_constraintTop_toTopOf="@+id/icon_Comment3" />
+
+    <TextView
+        android:id="@+id/txt_Time3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="2일 전"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_Comment3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_Comment3" />
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_Comment3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

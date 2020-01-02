@@ -1,0 +1,80 @@
+<html>
+
+<head>
+	<title>web-server test</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$.ajax({
+				type: 'post',
+				url: 'th.csv',
+				dataType: 'text',
+				success: function (data) {
+
+					var allRows = data.split(/\r?\n|\r/);
+					var div1 = '<div style="width:60%; float:left; margin-right:10px;">'
+					var table = '<table id="tb1">';
+					div1 += table;
+					for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+						if (singleRow === 0) {
+							table += '<thead>';
+							table += '<tr>';
+						} else {
+							table += '<tr>';
+						}
+						var rowCells = allRows[singleRow].split(',');
+						for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+							if (singleRow === 0) {
+								table += '<th>';
+								table += rowCells[rowCell];
+								table += '</th>';
+							} else {
+								table += '<td>';
+								table += rowCells[rowCell];
+								table += '</td>';
+							}
+						}
+						if (singleRow === 0) {
+							table += '</tr>';
+							table += '</thead>';
+							table += '<tbody>';
+						} else {
+							table += '</tr>';
+						}
+					}
+					table += '</tbody>';
+					table += '</table>';
+					$('body').append(table);
+					'</div>'
+				}
+			})
+		})
+	</script>
+
+	<style type="text/css">
+		table {
+			text-align: center;
+			border-collapse: collapse;
+			border: 1px solid #d4d4d4;
+		}
+
+		tr:nth-child(even) {
+			background: #d4d4d4;
+		}
+
+		th,
+		td {
+			padding: 10px 30px;
+		}
+
+		th {
+			border-bottom: 1px solid #d4d4d4;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 align="center">Temperature&Humidty</h1>
+</body>
+
+</html>

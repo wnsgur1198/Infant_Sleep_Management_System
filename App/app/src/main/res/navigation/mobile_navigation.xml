@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.relaxleep2.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="com.example.relaxleep2.ui.sleep.SleepFragment"
+        android:label="@string/menu_sleep"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/nav_chart"
+        android:name="com.example.relaxleep2.ui.chart.ChartFragment"
+        android:label="@string/menu_chart"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/nav_environment"
+        android:name="com.example.relaxleep2.ui.environment.EnvironmentFragment"
+        android:label="@string/menu_environment"
+        tools:layout="@layout/fragment_environment" />
+
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.example.relaxleep2.ui.music.MusicFragment"
+        android:label="@string/menu_music"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/nav_streaming"
+        android:name="com.example.relaxleep2.ui.streaming.StreamingFragment"
+        android:label="@string/menu_streaming"
+        tools:layout="@layout/fragment_streaming" />
+
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="com.example.relaxleep2.ui.guide.GuideFragment"
+        android:label="@string/menu_guide"
+        tools:layout="@layout/fragment_guide" />
+</navigation>
