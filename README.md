@@ -1,7 +1,7 @@
 # Infant_Sleep_Management_System
 >학부생 3학년 1학기부터 2학기까지 진행한 영아수면관리시스템 개발
 
-![](readme-img/header.jpg)
+![](readme-img/header.png)
 
 ## Installation
 
@@ -31,8 +31,6 @@ Visual Studio2019로 실행함
 ## Meta
 
 김준혁 – wnsgur1198@naver.com
-
-[https://github.com/wnsgur1198/Korean_history-TOEIC-reminder]
 
 ## Contributing
 
