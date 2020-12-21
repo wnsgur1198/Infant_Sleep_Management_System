@@ -2,16 +2,10 @@
 > 학부생 3학년 동안 진행한 프로젝트, 스마트기기를 이용한 영아수면관리시스템 중 '영상처리서버 및 데이터베이스 구축 관리'를 담당함
 
 
-## 영상처리를 활용한 수면여부판단
-![](readme-img/header2.png)
-
-
-## 설치 형태
-![](readme-img/설치형태.png)
-
-
 ## 제품 사진
-![](readme-img/제품사진.png)
+![](readme-img/header.png)
+
+![](readme-img/header2.png)
 
 
 ## 개발 기간
@@ -33,6 +27,7 @@
     * Database 설계 및 구축
     * 수면 상태 판단 알고리즘 구현
     * 모바일 앱(수면테이블, 실시간영상) 구현
+    상세내용은 링크 참조 <https://drive.google.com/file/d/1CvY-4P9NLofEiTZ96PdL-tjOdzNO6g25/view?usp=sharing>
 
 
 ## Development Setup
