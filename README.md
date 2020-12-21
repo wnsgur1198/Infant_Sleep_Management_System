@@ -5,7 +5,7 @@
 ## 제품 사진
 ![](readme-img/header.png)
 
-![](readme-img/header2.png)
+![](readme-img/app.png)
 
 
 ## 개발 기간
@@ -27,7 +27,10 @@
     * Database 설계 및 구축
     * 수면 상태 판단 알고리즘 구현
     * 모바일 앱(수면테이블, 실시간영상) 구현
-    상세내용은 링크 참조 <https://drive.google.com/file/d/1CvY-4P9NLofEiTZ96PdL-tjOdzNO6g25/view?usp=sharing>
+    
+    상세내용은 링크 참조 
+    
+    https://drive.google.com/file/d/1vDEU6LXjwh6c6If4AgYxFRQyLB15MLk5/view?usp=sharing
 
 
 ## Development Setup
